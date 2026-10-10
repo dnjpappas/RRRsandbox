@@ -1,0 +1,798 @@
+
+
+/* Rough Road Ranch Core Palette
+
+#293821   Deep Green 
+#F7F3EB   Warm Cream 
+#FFFDF9   Off White 
+#292620   Charcoal 
+#6B4F3A   Warm Brown  */
+
+
+/* =========================
+   ROUGH ROAD RANCH
+   COLOR PALETTE
+========================= */
+
+:root {
+    --ranch-green: #293821;
+    --ranch-green-dark: #1D2918;
+    --ranch-brown: #6B4F3A;
+    --ranch-brown-dark: #493629;
+
+    --ranch-cream: #F7F3EB;
+    --ranch-cream-dark: #EDE5D8;
+    --ranch-white: #FFFDF9;
+
+    --ranch-charcoal: #292620;
+    --ranch-text: #4E4941;
+    --ranch-muted: #746D63;
+
+    --ranch-sage: #78866B;
+    --ranch-tan: #C9B79C;
+    --ranch-rust: #8B4A32;
+    --ranch-mint: #E0E9D9;
+
+    --ranch-border: #D8CDBD;
+}
+
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: var(--ranch-cream);
+    color: var(--ranch-charcoal);
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+.contactBttn {
+    background-color:#293821
+}
+
+.contactBttn:hover {
+    background-color: var(--ranch-sage);
+    color: var(--ranch-cream);
+}
+
+.ranch-navbar {
+    background-color: var(--ranch-cream);
+
+    --bs-navbar-color: var(--ranch-green-dark);
+    --bs-navbar-hover-color: var(--ranch-brown);
+    --bs-navbar-active-color: var(--ranch-rust);
+}
+
+.ranch-navbar .nav-link {
+    font-family: "Lora", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar .navbar-nav {
+        align-items: flex-end;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        display: inline-block;
+    }
+
+    .schedule-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero {
+    background-image: url(./Images/barn-distant-eve.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--ranch-cream);
+}
+
+.RRRtitle {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.RRRsubtitle {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.RRRsubtitle::after {
+    content: "";      /* creates the pseudo-element */
+    display: block;   /* makes it occupy its own line */
+    width: 300px;
+    height: 2px;
+
+    background: linear-gradient(
+    to right,
+    transparent,
+    var(--ranch-tan),
+    transparent
+    );
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+.hero-content {
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 10px;
+        
+    background: radial-gradient(
+    ellipse,
+    rgba(41, 38, 32, 0.80) 50%,
+    rgba(41, 38, 32, 0) 100%
+    );
+}
+
+.hero-description {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.exploreBttn {
+    background-color: var(--ranch-green);
+    border-color: var(--ranch-cream);
+}
+
+.exploreBttn:hover {
+    background-color: var(--ranch-green-dark);
+    border-color: var(--ranch-cream);
+}
+
+.heroContactBttn {
+    border-color: var(--ranch-cream);
+    color: var(--ranch-cream);
+}
+
+.heroContactBttn:hover {
+    background-color: var(--ranch-cream);
+    color: var(--ranch-green);
+}
+
+/* =========================================================
+   WELCOME
+   ========================================================= */
+
+.welcome-img {
+    border: 6px solid var(--ranch-green);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(41, 38, 32, 0.5);
+}
+
+.welcome-eyebrow {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--ranch-brown);
+    margin-bottom: 0;
+}
+
+.welcome-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+    color: var(--ranch-brown);
+}
+
+.welcome-title::after {
+    content: "";      /* creates the pseudo-element */
+    display: block;   /* makes it occupy its own line */
+    width: 400px;
+    height: 2px;
+
+    background: linear-gradient(
+    to right,
+    transparent,
+    var(--ranch-brown),
+    transparent
+    );
+
+    margin-top: 0.5rem;
+}
+
+.welcome-para {
+    color: var(--ranch-brown);
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   BOARDING
+   ========================================================= */
+
+.boarding-section {
+    border-top: 6px solid var(--ranch-brown);
+    background-color: var(--ranch-cream-dark);
+}
+
+.boarding-banner {
+    background-image: url(./Images/front-paddock-vintage.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+
+    position: relative;
+}
+
+.boarding-overlay {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--ranch-cream-dark) 30%,
+    var(--ranch-cream-dark) 70%,
+    transparent 100%
+);
+
+    display: flex;
+    align-items: center;
+   
+}
+
+.boarding-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    
+    color: var(--ranch-brown);
+}
+
+.boarding-subtitle {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ranch-brown);
+    
+}
+
+.boarding-para {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* boarding features section */
+
+.boarding-fit {
+    padding-top: 3rem;
+    
+}
+
+/* .boarding-fit-para {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* flip cards */
+
+.flip-card {
+    height: 320px;
+    width: 100%;
+    perspective: 1000px;
+
+    
+    box-shadow: 0 4px 12px rgba(41, 38, 32, 0.40);
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.flip-card:hover {
+    transform: translateY(-5px);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+
+    /* transform: rotateY(180deg); */
+    transition: transform 0.6s;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: var(--ranch-sage);
+    color: var(--ranch-cream);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 1.5rem;
+
+    text-align: center;
+}
+
+.flip-card-back {
+    background-color: var(--ranch-cream);
+    color: var(--ranch-charcoal);
+    transform: rotateY(180deg);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-details {
+    width: 85%;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.flip-card-details li {
+    margin-bottom: 0.35rem;
+}
+
+.flip-card-details li:last-child {
+    margin-bottom: 0;
+}
+
+.flip-card-details li::before {
+    content: "✓";
+    margin-right: 0.5rem;
+    color: var(--ranch-green-dark);
+}
+
+.flip-card-icon {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+
+    background-color: var(--ranch-cream);
+    border-radius: 50%;
+    border: 6px solid var(--ranch-green);
+
+    display: flex;
+    align-items: center;        /* vertical */
+    justify-content: center;    /* horizontal */
+
+    margin-bottom: 1rem;
+}
+
+.flip-card-icon i {
+    color: var(--ranch-green);
+    font-size: 3rem;
+}
+
+.flip-card-front-description {
+    max-width: 250px;
+}
+
+.flip-card-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.flip-card-title::after {
+    content: "";      /* creates the pseudo-element */
+    display: block;   /* makes it occupy its own line */
+    width: 200px;
+    height: 2px;
+
+    background: linear-gradient(
+    to right,
+    transparent,
+    var(--ranch-cream) 20%,
+    var(--ranch-cream) 80%,
+    transparent
+
+    );
+
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flip-card-back-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ranch-green-dark);
+}
+
+.flip-card:focus {
+    outline: 2px solid var(--ranch-green-dark);
+    outline-offset: 3px;
+}
+
+/* Boarding callout section */
+
+.boarding-callout {
+    min-height: 210px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    background-color: var(--ranch-border);
+    box-shadow: 0 4px 12px rgba(41, 38, 32, 0.40);
+    border-radius: 10px;
+}
+
+.boarding-callout-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.25px;
+}
+
+.boarding-callout-icon i {
+    color: var(--ranch-green);
+    font-size: 4rem;
+
+    padding: 1.5rem;
+    border-right: 3px solid var(--ranch-tan);
+}
+
+.boarding-callout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+}
+
+.boarding-callout-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ranch-green-dark);
+}
+
+/* =========================================================
+   THE BARN
+   ========================================================= */
+
+.barn-section {
+    background-color: var(--ranch-green-dark);
+}
+
+.barn-content {
+    color: var(--ranch-cream);
+}
+
+.barn-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.barn-carousel-frame {
+    border: 4px solid var(--ranch-cream);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(41, 38, 32, 0.5);
+
+}
+
+.barn-carousel-photo {
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   OUR FARM
+   ========================================================= */
+
+.farm-banner-img {
+    max-width: 100%;
+    height: auto;
+    opacity: 70%;
+}
+
+.our-farm-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    
+    color: var(--ranch-green);
+}
+
+.our-farm-subtitle {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ranch-brown);
+    
+}
+
+.our-farm-para {
+    font-weight: 600;
+    color: var(--ranch-brown);
+}
+
+.our-farm-card {
+    background-color: var(--ranch-cream-dark);
+    border-radius: 10px;
+    padding: 0.75rem;
+    box-shadow: 0 4px 12px rgba(18, 63, 156, 0.2);
+    min-height: 330px;
+    height: 100%;
+}
+
+ .farm-card-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+ }
+
+ .our-farm-title-card {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--ranch-green);
+}
+
+.farm-card-icon-img {
+    max-width: 100%;
+}
+
+.farm-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 550px) {
+    .camera-card {
+        flex-direction: column;
+    }
+
+    .camera-card-content,
+    .camera-img-frame {
+        width: 100%;
+    }
+
+    .camera-img {
+        height: 180px;
+    }
+}
+
+/* Camera Card */
+
+.camera-card {
+    
+    display: flex;
+    
+}
+
+.camera-card-header {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.camera-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.camera-card-title {
+    padding-left: 1rem;
+    
+}
+
+.camera-intro-title {
+    font-family: "Oooh Baby", cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ranch-brown); 
+}
+
+
+
+/* Goat Card */
+
+.goat-images {
+    width: 100%;        /* tells each image to fill the width of its Bootstrap column. */
+    height: 120px;      /* gives every image exactly the same height */
+    object-fit: cover;      /* tells the browser to fill that rectangular area with the photograph, cropping the edges when necessary rather than stretching or distorting it. */
+    border-radius: 10px;
+}
+
+
+/* Chicken Card */
+
+.chicken-images {
+    width: 100%;        /* tells each image to fill the width of its Bootstrap column. */
+    height: 150px;      /* gives every image exactly the same height */
+    object-fit: cover;      /* tells the browser to fill that rectangular area with the photograph, cropping the edges when necessary rather than stretching or distorting it. */
+    border-radius: 10px;
+}
+
+
+/* Bee Card */
+
+.bee-images {
+    width: 100%;        /* tells each image to fill the width of its Bootstrap column. */
+    height: 150px;      /* gives every image exactly the same height */
+    object-fit: cover;      /* tells the browser to fill that rectangular area with the photograph, cropping the edges when necessary rather than stretching or distorting it. */
+    border-radius: 10px;
+}
+
+.bee-img-frame {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================================
+   FAQ SECTION
+   ========================================================= */
+
+.faq-section {
+    background-color: var(--ranch-cream);
+}
+
+.faq-eyebrow {
+    font-family: "Oooh Baby", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ranch-brown);
+    margin-bottom: 0.5rem;
+}
+
+.faq-heading {
+    font-family: "Lora", serif;
+    color: var(--ranch-green);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.faq-subtitle {
+    color: var(--ranch-brown);
+    font-size: 1rem;
+}
+
+.faq-photo-frame {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(41, 56, 33, 0.12);
+}
+
+.faq-photo {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /* may crop part of the image. */
+    object-position: center;    /* controls which part of the photograph stays centered within that crop. */
+}
+
+/* =========================================================
+   FAQ ACCORDION
+   ========================================================= */
+
+.faq-section .accordion {
+    --bs-accordion-bg: var(--ranch-white);
+    --bs-accordion-color: var(--ranch-green-dark);
+    --bs-accordion-border-color: #E0D7C9;
+    --bs-accordion-border-radius: 10px;
+    --bs-accordion-inner-border-radius: 10px;
+
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--ranch-mint);
+    --bs-accordion-active-color: var(--ranch-green-dark);
+}
+
+/* Individual FAQ Items */
+.faq-section .accordion-item {
+    margin-bottom: 12px;
+    border: 1px solid #E0D7C9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Question Buttons */
+.faq-section .accordion-button {
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.25rem;
+}
+
+/* Remove Bootstrap's default chevron */
+.faq-section .accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ranch-rust);
+    width: auto;
+    height: auto;
+    transform: none;
+}
+
+/* Change + to − when expanded */
+.faq-section .accordion-button:not(.collapsed)::after {
+    content: "−";
+    background-image: none;
+    transform: none;
+}
+
+/* Answer Text */
+.faq-section .accordion-body {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ranch-charcoal);
+    padding: 1.25rem;
+}
+
+
