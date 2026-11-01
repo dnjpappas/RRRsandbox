@@ -508,6 +508,10 @@ body {
     color: var(--ranch-green-dark);
 }
 
+.flip-card-pricing {
+    margin-bottom: 1rem;
+}
+
 /* =========================================================
    THE BARN
    ========================================================= */
@@ -795,4 +799,118 @@ body {
     padding: 1.25rem;
 }
 
+
+/* FAQ Boarding Pricing Table */
+.ranch-pricing-table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--ranch-charcoal);
+
+    width: 100%;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--ranch-tan);
+}
+
+.ranch-pricing-table thead th {
+    background-color: var(--ranch-mint);
+    color: var(--ranch-green);
+    font-weight: 600;
+}
+
+.ranch-pricing-table th,
+.ranch-pricing-table td {
+    padding: 0.75rem 0.5rem;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--ranch-tan);
+}
+
+.ranch-pricing-table tbody tr:last-child th,
+.ranch-pricing-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.ranch-pricing-table th:not(:first-child),
+.ranch-pricing-table td:not(:first-child) {
+    text-align: center;
+}
+
+.ranch-pricing-note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--ranch-brown);
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================================
+   CONTACT US FOOTER
+   ========================================================= */
+
+.ranch-footer {
+    background-color: var(--ranch-green);
+    color: var(--ranch-white);
+    padding: 4rem 0 1.5rem;
+}
+
+.footer-heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer-heading h2 {
+    font-family: "Lora", serif;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading p {
+    color: var(--ranch-tan);
+    margin-bottom: 0;
+}
+
+.footer-contact {
+    border-top: 1px solid var(--ranch-sage);
+    border-bottom: 1px solid var(--ranch-sage);
+    padding: 2rem 0;
+}
+
+.footer-contact-item {
+    text-align: center;
+}
+
+.footer-contact-item i {
+    display: block;
+    color: var(--ranch-tan);
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-contact-item h3 {
+    font-family: "Lora", serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-contact-item a {
+    color: var(--ranch-cream);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-item a:hover,
+.footer-contact-item a:focus-visible {
+    color: var(--ranch-tan);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+    color: var(--ranch-tan);
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
 
